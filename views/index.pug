@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title My App
+  body
+    h1 Dictionary
+    form(method='post', action='/submit')
+        input(type="text", name="search-bar", placeholder="search word")
+        button
+    
+    //- p definition : #{data[0].meanings[0].definitions[0].definition}
+
+    - const word = data[0].meanings[0].definitions[0].definition
+    p definition : #{word}
+
+
+
+    
+  
+
+
+
+
+ 
+        
